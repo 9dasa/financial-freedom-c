@@ -1,6 +1,6 @@
 ﻿namespace financial_freedom_c
 {
-    partial class Form1
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,54 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.picDepartmentLogo = new System.Windows.Forms.PictureBox();
+            this.picUniversityLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picDepartmentLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUniversityLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(356, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtUsername.Location = new System.Drawing.Point(328, 205);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(121, 20);
+            this.txtUsername.TabIndex = 1;
             // 
-            // textBox2
+            // lblUsername
             // 
-            this.textBox2.Location = new System.Drawing.Point(373, 232);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(224, 208);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(74, 13);
+            this.lblUsername.TabIndex = 2;
+            this.lblUsername.Text = "USERNAME :";
             // 
-            // button1
+            // lblPassword
             // 
-            this.button1.Location = new System.Drawing.Point(195, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(222, 260);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(76, 13);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "PASSWORD :";
             // 
-            // Form1
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(328, 257);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(121, 20);
+            this.txtPassword.TabIndex = 4;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.Green;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Location = new System.Drawing.Point(181, 347);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(160, 51);
+            this.btnLogin.TabIndex = 5;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.DarkRed;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(375, 347);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(160, 51);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.Text = "EXIT";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // picDepartmentLogo
+            // 
+            this.picDepartmentLogo.Image = global::financial_freedom_c.Properties.Resources.download__6_;
+            this.picDepartmentLogo.Location = new System.Drawing.Point(587, 12);
+            this.picDepartmentLogo.Name = "picDepartmentLogo";
+            this.picDepartmentLogo.Size = new System.Drawing.Size(184, 139);
+            this.picDepartmentLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picDepartmentLogo.TabIndex = 8;
+            this.picDepartmentLogo.TabStop = false;
+            // 
+            // picUniversityLogo
+            // 
+            this.picUniversityLogo.Image = global::financial_freedom_c.Properties.Resources.download__5_;
+            this.picUniversityLogo.Location = new System.Drawing.Point(25, 12);
+            this.picUniversityLogo.Name = "picUniversityLogo";
+            this.picUniversityLogo.Size = new System.Drawing.Size(248, 130);
+            this.picUniversityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUniversityLogo.TabIndex = 7;
+            this.picUniversityLogo.TabStop = false;
+            // 
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.picDepartmentLogo);
+            this.Controls.Add(this.picUniversityLogo);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.txtUsername);
+            this.Name = "MainMenu";
+            this.Text = "LOGIN";
+            ((System.ComponentModel.ISupportInitialize)(this.picDepartmentLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUniversityLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox picUniversityLogo;
+        private System.Windows.Forms.PictureBox picDepartmentLogo;
     }
 }
 
