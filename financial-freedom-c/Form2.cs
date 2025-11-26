@@ -15,6 +15,7 @@ namespace financial_freedom_c
         public Form2()
         {
             InitializeComponent();
+            pnlGoals.Enabled = false;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -30,5 +31,27 @@ namespace financial_freedom_c
             this.Close();      
         }
 
+        private void pnlFinancialData_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSaveData_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtMonthlyIncome.Text) ||
+                string.IsNullOrWhiteSpace(txtExtraIncome.Text) ||
+                string.IsNullOrWhiteSpace(txtMonthlyExpenses.Text) ||
+                string.IsNullOrWhiteSpace(txtInvestmentPercentage.Text))
+            {
+                MessageBox.Show("Please fill all financial fields first.",
+                                "Missing data",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            pnlGoals.Enabled = true;
+
+        }
     }
 }
