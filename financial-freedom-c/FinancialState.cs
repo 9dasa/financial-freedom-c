@@ -13,7 +13,7 @@ namespace financial_freedom_c
         public static decimal MonthlyExpenses { get; set; }
 
         
-        public static int InvestmentPercentage { get; set; }
+        public static decimal InvestmentPercentage { get; set; }
 
         
         public static decimal TotalIncome

@@ -57,7 +57,7 @@ namespace financial_freedom_c
             decimal monthlyIncome;
             decimal extraIncome;
             decimal monthlyExpenses;
-            int percent;
+            decimal percent;
 
             // If the user enters text (like "abc"), TryParse will fail => invalid
             if (!decimal.TryParse(txtMonthlyIncome.Text, out monthlyIncome) || monthlyIncome < 0)
@@ -87,9 +87,13 @@ namespace financial_freedom_c
                 return;
             }
 
+
+
             // percentage comes from the ComboBox
-            if (!int.TryParse(cmbInvestmentPercentage.SelectedItem.ToString(), out percent) ||
-                percent < 0 || percent > 100)
+            
+
+            if (!decimal.TryParse(cmbInvestmentPercentage.SelectedItem.ToString(), out percent) ||
+                percent < 0m || percent > 100m)
             {
                 MessageBox.Show("Investment Percentage must be between 0 and 100.",
                                 "Invalid input",
@@ -97,6 +101,7 @@ namespace financial_freedom_c
                                 MessageBoxIcon.Warning);
                 return;
             }
+
 
             // 3) Calculate savings capacity
             decimal totalIncome = monthlyIncome + extraIncome;

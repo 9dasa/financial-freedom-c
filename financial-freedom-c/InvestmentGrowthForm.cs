@@ -39,6 +39,10 @@ namespace financial_freedom_c
             cmbYears.Items.Add("3");
             cmbYears.Items.Add("4");
             cmbYears.Items.Add("5");
+            cmbYears.Items.Add("6");
+            cmbYears.Items.Add("7");
+            cmbYears.Items.Add("8");
+            cmbYears.Items.Add("9");
             cmbYears.Items.Add("10");
             cmbYears.Items.Add("11");
             cmbYears.Items.Add("12");
