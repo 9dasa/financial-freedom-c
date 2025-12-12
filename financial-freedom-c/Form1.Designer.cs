@@ -42,43 +42,48 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(328, 205);
+            this.txtUsername.Location = new System.Drawing.Point(383, 252);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(121, 20);
+            this.txtUsername.Size = new System.Drawing.Size(140, 24);
             this.txtUsername.TabIndex = 1;
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(224, 208);
+            this.lblUsername.Location = new System.Drawing.Point(261, 256);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(74, 13);
+            this.lblUsername.Size = new System.Drawing.Size(86, 17);
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "USERNAME :";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(222, 260);
+            this.lblPassword.Location = new System.Drawing.Point(259, 320);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(76, 13);
+            this.lblPassword.Size = new System.Drawing.Size(92, 17);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "PASSWORD :";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(328, 257);
+            this.txtPassword.Location = new System.Drawing.Point(383, 316);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(121, 20);
+            this.txtPassword.Size = new System.Drawing.Size(140, 24);
             this.txtPassword.TabIndex = 4;
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Green;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Location = new System.Drawing.Point(181, 347);
+            this.btnLogin.Location = new System.Drawing.Point(211, 427);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(160, 51);
+            this.btnLogin.Size = new System.Drawing.Size(187, 63);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -88,9 +93,10 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.DarkRed;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(375, 347);
+            this.btnExit.Location = new System.Drawing.Point(438, 427);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(160, 51);
+            this.btnExit.Size = new System.Drawing.Size(187, 63);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -99,9 +105,10 @@
             // picDepartmentLogo
             // 
             this.picDepartmentLogo.Image = global::financial_freedom_c.Properties.Resources.download__6_;
-            this.picDepartmentLogo.Location = new System.Drawing.Point(587, 12);
+            this.picDepartmentLogo.Location = new System.Drawing.Point(685, 15);
+            this.picDepartmentLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picDepartmentLogo.Name = "picDepartmentLogo";
-            this.picDepartmentLogo.Size = new System.Drawing.Size(184, 139);
+            this.picDepartmentLogo.Size = new System.Drawing.Size(215, 171);
             this.picDepartmentLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picDepartmentLogo.TabIndex = 8;
             this.picDepartmentLogo.TabStop = false;
@@ -109,18 +116,19 @@
             // picUniversityLogo
             // 
             this.picUniversityLogo.Image = global::financial_freedom_c.Properties.Resources.download__5_;
-            this.picUniversityLogo.Location = new System.Drawing.Point(25, 12);
+            this.picUniversityLogo.Location = new System.Drawing.Point(29, 15);
+            this.picUniversityLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picUniversityLogo.Name = "picUniversityLogo";
-            this.picUniversityLogo.Size = new System.Drawing.Size(248, 130);
+            this.picUniversityLogo.Size = new System.Drawing.Size(289, 160);
             this.picUniversityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picUniversityLogo.TabIndex = 7;
             this.picUniversityLogo.TabStop = false;
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(911, 554);
             this.Controls.Add(this.picDepartmentLogo);
             this.Controls.Add(this.picUniversityLogo);
             this.Controls.Add(this.btnExit);
@@ -129,6 +137,7 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.txtUsername);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainMenu";
             this.Text = "LOGIN";
             ((System.ComponentModel.ISupportInitialize)(this.picDepartmentLogo)).EndInit();
