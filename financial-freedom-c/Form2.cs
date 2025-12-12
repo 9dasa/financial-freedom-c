@@ -161,5 +161,11 @@ namespace financial_freedom_c
             InvestmentGrowthForm Frm = new InvestmentGrowthForm();
             Frm.ShowDialog();
         }
+
+        private void btnEmergencyFund_Click(object sender, EventArgs e)
+        {
+            EmergencyFundForm frm = new EmergencyFundForm();    
+            frm.ShowDialog();
+        }
     }
 }
