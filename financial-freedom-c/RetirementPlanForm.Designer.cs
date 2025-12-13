@@ -178,7 +178,7 @@
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(259, 133);
+            this.label.Location = new System.Drawing.Point(272, 133);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(207, 22);
             this.label.TabIndex = 7;
