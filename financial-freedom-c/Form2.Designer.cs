@@ -183,6 +183,7 @@
             this.btnFinancialStability.TabIndex = 3;
             this.btnFinancialStability.Text = "Financial Stability";
             this.btnFinancialStability.UseVisualStyleBackColor = false;
+            this.btnFinancialStability.Click += new System.EventHandler(this.btnFinancialStability_Click);
             // 
             // btnEmergencyFund
             // 

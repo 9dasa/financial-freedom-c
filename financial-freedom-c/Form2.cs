@@ -153,7 +153,8 @@ namespace financial_freedom_c
 
         private void btnFinancialIndependence_Click(object sender, EventArgs e)
         {
-            
+            FinancialIndependenceForm frm = new FinancialIndependenceForm();
+            frm.ShowDialog();
         }
 
         private void btnInvestmentGrowth_Click(object sender, EventArgs e)
@@ -172,6 +173,11 @@ namespace financial_freedom_c
         {
             RetirementPlanForm frm = new RetirementPlanForm();
             frm.ShowDialog();
+        }
+
+        private void btnFinancialStability_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -52,6 +52,12 @@
     <Compile Include="EmergencyFundForm.Designer.cs">
       <DependentUpon>EmergencyFundForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FinancialIndependenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialIndependenceForm.Designer.cs">
+      <DependentUpon>FinancialIndependenceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FinancialState.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="EmergencyFundForm.resx">
       <DependentUpon>EmergencyFundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialIndependenceForm.resx">
+      <DependentUpon>FinancialIndependenceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
