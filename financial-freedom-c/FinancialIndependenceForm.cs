@@ -107,5 +107,15 @@ namespace financial_freedom_c
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FinancialIndependenceForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

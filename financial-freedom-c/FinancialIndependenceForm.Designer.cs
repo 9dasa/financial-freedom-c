@@ -53,15 +53,16 @@
             this.label1.Size = new System.Drawing.Size(318, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Financial Independence";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label2.Location = new System.Drawing.Point(6, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(768, 25);
+            this.label2.Size = new System.Drawing.Size(936, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Calculate how much money you need so your investments can cover all your expenses" +
     ".";
@@ -97,7 +98,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(6, 205);
+            this.label3.Location = new System.Drawing.Point(7, 210);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(311, 25);
             this.label3.TabIndex = 4;
@@ -157,11 +158,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label4.Location = new System.Drawing.Point(888, 133);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 23);
+            this.label4.Size = new System.Drawing.Size(80, 26);
             this.label4.TabIndex = 12;
             this.label4.Text = "Results";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -177,7 +178,7 @@
             "20",
             "25",
             "30"});
-            this.cmbYears.Location = new System.Drawing.Point(354, 174);
+            this.cmbYears.Location = new System.Drawing.Point(424, 253);
             this.cmbYears.Name = "cmbYears";
             this.cmbYears.Size = new System.Drawing.Size(121, 33);
             this.cmbYears.TabIndex = 13;
@@ -187,7 +188,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label5.Location = new System.Drawing.Point(318, 130);
+            this.label5.Location = new System.Drawing.Point(383, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(224, 25);
             this.label5.TabIndex = 14;
@@ -209,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(1346, 498);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -226,6 +227,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FinancialIndependenceForm";
             this.Text = "FinancialIndependenceForm";
+            this.Load += new System.EventHandler(this.FinancialIndependenceForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
