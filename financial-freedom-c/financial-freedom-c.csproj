@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DebtFreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebtFreeForm.Designer.cs">
+      <DependentUpon>DebtFreeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmergencyFundForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     </Compile>
     <Compile Include="FinancialIndependenceForm.Designer.cs">
       <DependentUpon>FinancialIndependenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialStabilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialStabilityForm.Designer.cs">
+      <DependentUpon>FinancialStabilityForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FinancialState.cs" />
     <Compile Include="Form1.cs">
@@ -70,6 +82,12 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDebtFreePlanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDebtFreePlanner.Designer.cs">
+      <DependentUpon>FrmDebtFreePlanner.cs</DependentUpon>
     </Compile>
     <Compile Include="InvestmentGrowthForm.cs">
       <SubType>Form</SubType>
@@ -85,17 +103,26 @@
     <Compile Include="RetirementPlanForm.Designer.cs">
       <DependentUpon>RetirementPlanForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DebtFreeForm.resx">
+      <DependentUpon>DebtFreeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmergencyFundForm.resx">
       <DependentUpon>EmergencyFundForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FinancialIndependenceForm.resx">
       <DependentUpon>FinancialIndependenceForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FinancialStabilityForm.resx">
+      <DependentUpon>FinancialStabilityForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDebtFreePlanner.resx">
+      <DependentUpon>FrmDebtFreePlanner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvestmentGrowthForm.resx">
       <DependentUpon>InvestmentGrowthForm.cs</DependentUpon>

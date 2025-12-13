@@ -40,7 +40,6 @@ namespace financial_freedom_c
         {
             pnlGoals.Enabled = false;
 
-            // 1) Check that all fields and the percentage are filled/selected
             if (string.IsNullOrWhiteSpace(txtMonthlyIncome.Text) ||
                 string.IsNullOrWhiteSpace(txtExtraIncome.Text) ||
                 string.IsNullOrWhiteSpace(txtMonthlyExpenses.Text) ||
@@ -53,13 +52,11 @@ namespace financial_freedom_c
                 return;
             }
 
-            // 2) Read and validate numbers
             decimal monthlyIncome;
             decimal extraIncome;
             decimal monthlyExpenses;
             decimal percent;
 
-            // If the user enters text (like "abc"), TryParse will fail => invalid
             if (!decimal.TryParse(txtMonthlyIncome.Text, out monthlyIncome) || monthlyIncome < 0)
             {
                 MessageBox.Show("Monthly Income must be a non‑negative number.",
@@ -89,7 +86,6 @@ namespace financial_freedom_c
 
 
 
-            // percentage comes from the ComboBox
             
 
             if (!decimal.TryParse(cmbInvestmentPercentage.SelectedItem.ToString(), out percent) ||
@@ -103,7 +99,6 @@ namespace financial_freedom_c
             }
 
 
-            // 3) Calculate savings capacity
             decimal totalIncome = monthlyIncome + extraIncome;
             decimal savingsCapacity = totalIncome - monthlyExpenses;
 
@@ -125,24 +120,21 @@ namespace financial_freedom_c
                 return;
             }
 
-            // 4) Positive savings → calculate investment amount
             decimal investmentAmount = savingsCapacity * (percent / 100m);
 
-            // 5) Store everything in FinancialState for later goal screens
             FinancialState.MonthlyIncome = monthlyIncome;
             FinancialState.ExtraIncome = extraIncome;
             FinancialState.MonthlyExpenses = monthlyExpenses;
             FinancialState.InvestmentPercentage = percent;
             FinancialState.InvestmentAmount = investmentAmount;
 
-            // 6) Inform the user and enable the goals panel
             MessageBox.Show(
                 "Your monthly investment amount is: " + investmentAmount.ToString("N2"),
                 "Data saved",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
 
-            pnlGoals.Enabled = true;   // now the user can pick a goal
+            pnlGoals.Enabled = true;   
 
         }
 
@@ -177,7 +169,31 @@ namespace financial_freedom_c
 
         private void btnFinancialStability_Click(object sender, EventArgs e)
         {
+            double income = double.Parse(txtMonthlyIncome.Text);
+            double extra = double.Parse(txtExtraIncome.Text);
+            double expenses = double.Parse(txtMonthlyExpenses.Text);
 
+            double monthlySaving = (income + extra) - expenses;
+            if (monthlySaving < 0) monthlySaving = 0;
+
+            FinancialStabilityForm f = new FinancialStabilityForm(this, monthlySaving);
+            f.Show();
+            this.Hide();
+        }
+
+
+        private void btnDebtFree_Click(object sender, EventArgs e)
+        {
+            double income = double.Parse(txtMonthlyIncome.Text);
+            double extra = double.Parse(txtExtraIncome.Text);
+            double expenses = double.Parse(txtMonthlyExpenses.Text);
+
+            double monthlyPayment = (income + extra) - expenses;
+            if (monthlyPayment < 0) monthlyPayment = 0;
+
+            DebtFreeForm f = new DebtFreeForm(this, monthlyPayment);
+            f.Show();
+            this.Hide();
         }
     }
 }
