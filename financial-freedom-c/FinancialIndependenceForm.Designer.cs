@@ -48,21 +48,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label1.Location = new System.Drawing.Point(317, 19);
+            this.label1.Location = new System.Drawing.Point(277, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(318, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Financial Independence";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label2.Location = new System.Drawing.Point(6, 78);
+            this.label2.Location = new System.Drawing.Point(5, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(936, 29);
+            this.label2.Size = new System.Drawing.Size(768, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Calculate how much money you need so your investments can cover all your expenses" +
     ".";
@@ -72,7 +71,7 @@
             this.lblSavingCapacityValue.AutoSize = true;
             this.lblSavingCapacityValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSavingCapacityValue.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblSavingCapacityValue.Location = new System.Drawing.Point(39, 174);
+            this.lblSavingCapacityValue.Location = new System.Drawing.Point(34, 174);
             this.lblSavingCapacityValue.Name = "lblSavingCapacityValue";
             this.lblSavingCapacityValue.Size = new System.Drawing.Size(0, 25);
             this.lblSavingCapacityValue.TabIndex = 2;
@@ -87,9 +86,9 @@
             "3",
             "5",
             "7"});
-            this.cmbGrowthRate.Location = new System.Drawing.Point(11, 253);
+            this.cmbGrowthRate.Location = new System.Drawing.Point(10, 253);
             this.cmbGrowthRate.Name = "cmbGrowthRate";
-            this.cmbGrowthRate.Size = new System.Drawing.Size(121, 33);
+            this.cmbGrowthRate.Size = new System.Drawing.Size(106, 33);
             this.cmbGrowthRate.TabIndex = 3;
             this.cmbGrowthRate.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -98,7 +97,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(7, 210);
+            this.label3.Location = new System.Drawing.Point(5, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(311, 25);
             this.label3.TabIndex = 4;
@@ -109,11 +108,11 @@
             // 
             this.txtResult.BackColor = System.Drawing.Color.Yellow;
             this.txtResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResult.Location = new System.Drawing.Point(665, 162);
+            this.txtResult.Location = new System.Drawing.Point(582, 162);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(468, 161);
+            this.txtResult.Size = new System.Drawing.Size(410, 161);
             this.txtResult.TabIndex = 5;
             this.txtResult.TextChanged += new System.EventHandler(this.txtResult_TextChanged);
             // 
@@ -121,10 +120,10 @@
             // 
             this.btnCalculate.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnCalculate.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.btnCalculate.Location = new System.Drawing.Point(548, 413);
+            this.btnCalculate.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnCalculate.Location = new System.Drawing.Point(480, 413);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(162, 61);
+            this.btnCalculate.Size = new System.Drawing.Size(142, 61);
             this.btnCalculate.TabIndex = 9;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = false;
@@ -133,10 +132,10 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.btnBack.Location = new System.Drawing.Point(12, 414);
+            this.btnBack.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnBack.Location = new System.Drawing.Point(10, 414);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(158, 60);
+            this.btnBack.Size = new System.Drawing.Size(138, 60);
             this.btnBack.TabIndex = 10;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -146,10 +145,10 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.Red;
             this.btnExit.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.btnExit.Location = new System.Drawing.Point(1159, 413);
+            this.btnExit.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnExit.Location = new System.Drawing.Point(1014, 413);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(163, 61);
+            this.btnExit.Size = new System.Drawing.Size(143, 61);
             this.btnExit.TabIndex = 11;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -158,11 +157,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label4.Location = new System.Drawing.Point(888, 133);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(777, 133);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 26);
+            this.label4.Size = new System.Drawing.Size(71, 23);
             this.label4.TabIndex = 12;
             this.label4.Text = "Results";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -178,17 +177,18 @@
             "20",
             "25",
             "30"});
-            this.cmbYears.Location = new System.Drawing.Point(424, 253);
+            this.cmbYears.Location = new System.Drawing.Point(339, 162);
             this.cmbYears.Name = "cmbYears";
-            this.cmbYears.Size = new System.Drawing.Size(121, 33);
+            this.cmbYears.Size = new System.Drawing.Size(106, 33);
             this.cmbYears.TabIndex = 13;
+            this.cmbYears.SelectedIndexChanged += new System.EventHandler(this.cmbYears_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label5.Location = new System.Drawing.Point(383, 210);
+            this.label5.Location = new System.Drawing.Point(278, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(224, 25);
             this.label5.TabIndex = 14;
@@ -199,7 +199,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label7.Location = new System.Drawing.Point(12, 130);
+            this.label7.Location = new System.Drawing.Point(10, 130);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(179, 25);
             this.label7.TabIndex = 16;
@@ -208,10 +208,10 @@
             // 
             // FinancialIndependenceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Honeydew;
-            this.ClientSize = new System.Drawing.Size(1346, 498);
+            this.BackColor = System.Drawing.Color.Ivory;
+            this.ClientSize = new System.Drawing.Size(1178, 498);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbYears);
@@ -225,6 +225,7 @@
             this.Controls.Add(this.lblSavingCapacityValue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.IndianRed;
             this.Name = "FinancialIndependenceForm";
             this.Text = "FinancialIndependenceForm";
             this.Load += new System.EventHandler(this.FinancialIndependenceForm_Load);
