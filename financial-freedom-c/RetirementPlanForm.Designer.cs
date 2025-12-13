@@ -264,7 +264,7 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.btnExit);
-            this.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.Name = "RetirementPlanForm";
             this.Text = "RetirementPlanForm";
             this.Load += new System.EventHandler(this.RetirementPlanForm_Load);
