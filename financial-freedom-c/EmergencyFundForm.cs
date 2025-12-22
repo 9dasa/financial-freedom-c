@@ -18,10 +18,10 @@ namespace financial_freedom_c
         }
         private void EmergencyFundForm_Load(object sender, EventArgs e)
         {
-            // Show monthly expenses stored from Form2
+            
             lblExpensesValue.Text = FinancialState.MonthlyExpenses.ToString("N2");
 
-            // Fill months dropdown
+            
             cmbMonths.Items.Clear();
             for (int i = 1; i <= 12; i++)
             {
@@ -39,7 +39,7 @@ namespace financial_freedom_c
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            // Validate selection
+            
             if (cmbMonths.SelectedIndex == -1)
             {
                 MessageBox.Show("Please select the number of months.",
@@ -58,7 +58,7 @@ namespace financial_freedom_c
             decimal monthlyExpenses = FinancialState.MonthlyExpenses;
             decimal requiredFund = monthlyExpenses * months;
 
-            // Display results
+            
             txtResult.Text =
                 "Monthly Expenses: " + monthlyExpenses.ToString("N2") + Environment.NewLine +
                 "Duration: " + months + " months" + Environment.NewLine +
@@ -81,6 +81,11 @@ namespace financial_freedom_c
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmergencyFundForm_Load_1(object sender, EventArgs e)
         {
 
         }

@@ -47,5 +47,9 @@ namespace financial_freedom_c
             Application.Exit();
         }
 
+        private void DebtFreeForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -195,5 +195,15 @@ namespace financial_freedom_c
             f.Show();
             this.Hide();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

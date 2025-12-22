@@ -43,7 +43,7 @@
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(383, 252);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(140, 24);
             this.txtUsername.TabIndex = 1;
@@ -71,17 +71,17 @@
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(383, 316);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(140, 24);
             this.txtPassword.TabIndex = 4;
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Green;
+            this.btnLogin.BackColor = System.Drawing.Color.Lime;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Location = new System.Drawing.Point(211, 427);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(187, 63);
             this.btnLogin.TabIndex = 5;
@@ -91,10 +91,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.DarkRed;
+            this.btnExit.BackColor = System.Drawing.Color.Red;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Location = new System.Drawing.Point(438, 427);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(187, 63);
             this.btnExit.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             this.picDepartmentLogo.Image = global::financial_freedom_c.Properties.Resources.download__6_;
             this.picDepartmentLogo.Location = new System.Drawing.Point(685, 15);
-            this.picDepartmentLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picDepartmentLogo.Margin = new System.Windows.Forms.Padding(4);
             this.picDepartmentLogo.Name = "picDepartmentLogo";
             this.picDepartmentLogo.Size = new System.Drawing.Size(215, 171);
             this.picDepartmentLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -117,7 +117,7 @@
             // 
             this.picUniversityLogo.Image = global::financial_freedom_c.Properties.Resources.download__5_;
             this.picUniversityLogo.Location = new System.Drawing.Point(29, 15);
-            this.picUniversityLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picUniversityLogo.Margin = new System.Windows.Forms.Padding(4);
             this.picUniversityLogo.Name = "picUniversityLogo";
             this.picUniversityLogo.Size = new System.Drawing.Size(289, 160);
             this.picUniversityLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -137,9 +137,10 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.txtUsername);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainMenu";
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picDepartmentLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUniversityLogo)).EndInit();
             this.ResumeLayout(false);

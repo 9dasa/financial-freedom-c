@@ -45,10 +45,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(180, 202);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 23);
+            this.label2.Size = new System.Drawing.Size(168, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Duration (months)";
             // 
@@ -57,7 +57,7 @@
             this.txtResult.AutoSize = true;
             this.txtResult.Location = new System.Drawing.Point(0, 0);
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(0, 23);
+            this.txtResult.Size = new System.Drawing.Size(0, 17);
             this.txtResult.TabIndex = 3;
             this.txtResult.Click += new System.EventHandler(this.label4_Click);
             // 
@@ -65,10 +65,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(122, 65);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(805, 25);
+            this.label1.Size = new System.Drawing.Size(871, 29);
             this.label1.TabIndex = 4;
             this.label1.Text = "Calculate how much you need for emergencies based on your monthly expenses";
             // 
@@ -76,10 +76,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(415, 9);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(277, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(201, 33);
+            this.label5.Size = new System.Drawing.Size(196, 29);
             this.label5.TabIndex = 5;
             this.label5.Text = "Emergency Fund";
             // 
@@ -101,7 +101,7 @@
             "11",
             "12",
             " "});
-            this.cmbMonths.Location = new System.Drawing.Point(196, 262);
+            this.cmbMonths.Location = new System.Drawing.Point(46, 219);
             this.cmbMonths.Name = "cmbMonths";
             this.cmbMonths.Size = new System.Drawing.Size(106, 24);
             this.cmbMonths.TabIndex = 6;
@@ -109,8 +109,8 @@
             // btnCalculate
             // 
             this.btnCalculate.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnCalculate.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(435, 474);
+            this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculate.Location = new System.Drawing.Point(376, 361);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(134, 37);
             this.btnCalculate.TabIndex = 7;
@@ -120,8 +120,8 @@
             // 
             // btnBack
             // 
-            this.btnBack.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(792, 474);
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(784, 361);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(86, 37);
             this.btnBack.TabIndex = 8;
@@ -132,8 +132,8 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Red;
-            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(116, 474);
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(12, 361);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(80, 37);
             this.btnExit.TabIndex = 9;
@@ -145,8 +145,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Info;
             this.panel1.Controls.Add(this.txtResult);
-            this.panel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(393, 192);
+            this.panel1.Location = new System.Drawing.Point(271, 149);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(358, 178);
             this.panel1.TabIndex = 11;
@@ -154,10 +153,10 @@
             // lblExpensesValue
             // 
             this.lblExpensesValue.AutoSize = true;
-            this.lblExpensesValue.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpensesValue.Location = new System.Drawing.Point(528, 152);
+            this.lblExpensesValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpensesValue.Location = new System.Drawing.Point(382, 121);
             this.lblExpensesValue.Name = "lblExpensesValue";
-            this.lblExpensesValue.Size = new System.Drawing.Size(63, 23);
+            this.lblExpensesValue.Size = new System.Drawing.Size(66, 25);
             this.lblExpensesValue.TabIndex = 12;
             this.lblExpensesValue.Text = "Result";
             this.lblExpensesValue.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -168,7 +167,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(1038, 537);
+            this.ClientSize = new System.Drawing.Size(921, 435);
             this.Controls.Add(this.lblExpensesValue);
             this.Controls.Add(this.cmbMonths);
             this.Controls.Add(this.panel1);
@@ -179,8 +178,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Name = "EmergencyFundForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "EmergencyFundForm";
+            this.Load += new System.EventHandler(this.EmergencyFundForm_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

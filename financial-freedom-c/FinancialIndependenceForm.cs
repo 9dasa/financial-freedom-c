@@ -24,7 +24,7 @@ namespace financial_freedom_c
             cmbGrowthRate.Items.Add("7");
             cmbGrowthRate.SelectedIndex = 0;
 
-            lblSavingCapacityValue.Text = FinancialState.SavingsCapacity.ToString("N2");
+           
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -33,7 +33,7 @@ namespace financial_freedom_c
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            // 1) Read monthly saving capacity
+         
             decimal saving = FinancialState.SavingsCapacity;
 
             if (saving <= 0)
@@ -45,7 +45,7 @@ namespace financial_freedom_c
                 return;
             }
 
-            // 2) Read number of years
+        
             int years;
             if (!int.TryParse(cmbYears.SelectedItem.ToString(), out years) || years <= 0)
             {
@@ -55,7 +55,7 @@ namespace financial_freedom_c
 
             int months = years * 12;
 
-            // 3) Read growth rate
+            
             decimal growthRate;
             if (!decimal.TryParse(cmbGrowthRate.SelectedItem.ToString(), out growthRate))
             {
@@ -63,12 +63,12 @@ namespace financial_freedom_c
                 return;
             }
 
-            growthRate = growthRate / 100m; // convert from % to decimal
+            growthRate = growthRate / 100m; 
 
-            // 4) Calculate future value with monthly compounding
+            
             decimal totalAmount = saving * months * (1 + growthRate);
 
-            // 5) Display result
+           
             txtResult.Text =
                 "Financial Independence Summary:" + Environment.NewLine +
                 "--------------------------------------------" + Environment.NewLine +

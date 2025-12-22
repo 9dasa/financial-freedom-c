@@ -29,6 +29,10 @@ namespace financial_freedom_c
             Application.Exit();         
         }
 
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

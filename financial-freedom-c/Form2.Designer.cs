@@ -48,6 +48,7 @@
             this.pnlFinancialData = new System.Windows.Forms.Panel();
             this.cmbInvestmentPercentage = new System.Windows.Forms.ComboBox();
             this.pnlGoals = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.pnlFinancialData.SuspendLayout();
             this.pnlGoals.SuspendLayout();
             this.SuspendLayout();
@@ -56,10 +57,10 @@
             // 
             this.lblFinancialDataTitle.AutoSize = true;
             this.lblFinancialDataTitle.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFinancialDataTitle.Location = new System.Drawing.Point(30, 25);
-            this.lblFinancialDataTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFinancialDataTitle.Location = new System.Drawing.Point(35, 31);
+            this.lblFinancialDataTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblFinancialDataTitle.Name = "lblFinancialDataTitle";
-            this.lblFinancialDataTitle.Size = new System.Drawing.Size(220, 27);
+            this.lblFinancialDataTitle.Size = new System.Drawing.Size(269, 33);
             this.lblFinancialDataTitle.TabIndex = 0;
             this.lblFinancialDataTitle.Text = "Financial statements";
             // 
@@ -67,10 +68,10 @@
             // 
             this.lblMonthlyIncome.AutoSize = true;
             this.lblMonthlyIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonthlyIncome.Location = new System.Drawing.Point(32, 91);
-            this.lblMonthlyIncome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMonthlyIncome.Location = new System.Drawing.Point(37, 112);
+            this.lblMonthlyIncome.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblMonthlyIncome.Name = "lblMonthlyIncome";
-            this.lblMonthlyIncome.Size = new System.Drawing.Size(114, 16);
+            this.lblMonthlyIncome.Size = new System.Drawing.Size(140, 20);
             this.lblMonthlyIncome.TabIndex = 1;
             this.lblMonthlyIncome.Text = "Monthly Income";
             // 
@@ -78,10 +79,10 @@
             // 
             this.lblExtraIncome.AutoSize = true;
             this.lblExtraIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExtraIncome.Location = new System.Drawing.Point(32, 149);
-            this.lblExtraIncome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblExtraIncome.Location = new System.Drawing.Point(37, 183);
+            this.lblExtraIncome.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblExtraIncome.Name = "lblExtraIncome";
-            this.lblExtraIncome.Size = new System.Drawing.Size(96, 16);
+            this.lblExtraIncome.Size = new System.Drawing.Size(119, 20);
             this.lblExtraIncome.TabIndex = 2;
             this.lblExtraIncome.Text = "Extra Income";
             // 
@@ -89,10 +90,10 @@
             // 
             this.lblMonthlyExpenses.AutoSize = true;
             this.lblMonthlyExpenses.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonthlyExpenses.Location = new System.Drawing.Point(32, 207);
-            this.lblMonthlyExpenses.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMonthlyExpenses.Location = new System.Drawing.Point(37, 255);
+            this.lblMonthlyExpenses.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblMonthlyExpenses.Name = "lblMonthlyExpenses";
-            this.lblMonthlyExpenses.Size = new System.Drawing.Size(132, 16);
+            this.lblMonthlyExpenses.Size = new System.Drawing.Size(161, 20);
             this.lblMonthlyExpenses.TabIndex = 3;
             this.lblMonthlyExpenses.Text = "Monthly Expenses";
             // 
@@ -100,10 +101,10 @@
             // 
             this.lblInvestmentPercentage.AutoSize = true;
             this.lblInvestmentPercentage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInvestmentPercentage.Location = new System.Drawing.Point(32, 262);
-            this.lblInvestmentPercentage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInvestmentPercentage.Location = new System.Drawing.Point(37, 322);
+            this.lblInvestmentPercentage.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblInvestmentPercentage.Name = "lblInvestmentPercentage";
-            this.lblInvestmentPercentage.Size = new System.Drawing.Size(165, 16);
+            this.lblInvestmentPercentage.Size = new System.Drawing.Size(201, 20);
             this.lblInvestmentPercentage.TabIndex = 4;
             this.lblInvestmentPercentage.Text = "Investment Percentage";
             // 
@@ -113,10 +114,10 @@
             this.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnter.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnter.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnEnter.Location = new System.Drawing.Point(35, 374);
-            this.btnEnter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnEnter.Location = new System.Drawing.Point(41, 460);
+            this.btnEnter.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(208, 45);
+            this.btnEnter.Size = new System.Drawing.Size(243, 55);
             this.btnEnter.TabIndex = 5;
             this.btnEnter.Text = "Enter";
             this.btnEnter.UseVisualStyleBackColor = false;
@@ -124,36 +125,36 @@
             // 
             // txtMonthlyIncome
             // 
-            this.txtMonthlyIncome.Location = new System.Drawing.Point(35, 109);
-            this.txtMonthlyIncome.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtMonthlyIncome.Location = new System.Drawing.Point(41, 134);
+            this.txtMonthlyIncome.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMonthlyIncome.Name = "txtMonthlyIncome";
-            this.txtMonthlyIncome.Size = new System.Drawing.Size(173, 20);
+            this.txtMonthlyIncome.Size = new System.Drawing.Size(201, 24);
             this.txtMonthlyIncome.TabIndex = 6;
             // 
             // txtExtraIncome
             // 
-            this.txtExtraIncome.Location = new System.Drawing.Point(35, 165);
-            this.txtExtraIncome.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtExtraIncome.Location = new System.Drawing.Point(41, 203);
+            this.txtExtraIncome.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtExtraIncome.Name = "txtExtraIncome";
-            this.txtExtraIncome.Size = new System.Drawing.Size(173, 20);
+            this.txtExtraIncome.Size = new System.Drawing.Size(201, 24);
             this.txtExtraIncome.TabIndex = 7;
             // 
             // txtMonthlyExpenses
             // 
-            this.txtMonthlyExpenses.Location = new System.Drawing.Point(35, 226);
-            this.txtMonthlyExpenses.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtMonthlyExpenses.Location = new System.Drawing.Point(41, 278);
+            this.txtMonthlyExpenses.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMonthlyExpenses.Name = "txtMonthlyExpenses";
-            this.txtMonthlyExpenses.Size = new System.Drawing.Size(173, 20);
+            this.txtMonthlyExpenses.Size = new System.Drawing.Size(201, 24);
             this.txtMonthlyExpenses.TabIndex = 8;
             // 
             // btnBack
             // 
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(12, 619);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnBack.Location = new System.Drawing.Point(14, 762);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(151, 36);
+            this.btnBack.Size = new System.Drawing.Size(176, 44);
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -163,10 +164,10 @@
             // 
             this.lblGoalsTitle.AutoSize = true;
             this.lblGoalsTitle.Font = new System.Drawing.Font("Microsoft YaHei", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGoalsTitle.Location = new System.Drawing.Point(40, 25);
-            this.lblGoalsTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGoalsTitle.Location = new System.Drawing.Point(47, 31);
+            this.lblGoalsTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblGoalsTitle.Name = "lblGoalsTitle";
-            this.lblGoalsTitle.Size = new System.Drawing.Size(187, 27);
+            this.lblGoalsTitle.Size = new System.Drawing.Size(232, 33);
             this.lblGoalsTitle.TabIndex = 1;
             this.lblGoalsTitle.Text = "Choose your goal";
             // 
@@ -176,10 +177,10 @@
             this.btnFinancialStability.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinancialStability.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinancialStability.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnFinancialStability.Location = new System.Drawing.Point(56, 210);
-            this.btnFinancialStability.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnFinancialStability.Location = new System.Drawing.Point(65, 258);
+            this.btnFinancialStability.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFinancialStability.Name = "btnFinancialStability";
-            this.btnFinancialStability.Size = new System.Drawing.Size(169, 50);
+            this.btnFinancialStability.Size = new System.Drawing.Size(197, 62);
             this.btnFinancialStability.TabIndex = 3;
             this.btnFinancialStability.Text = "Financial Stability";
             this.btnFinancialStability.UseVisualStyleBackColor = false;
@@ -191,10 +192,10 @@
             this.btnEmergencyFund.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmergencyFund.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmergencyFund.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnEmergencyFund.Location = new System.Drawing.Point(56, 384);
-            this.btnEmergencyFund.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnEmergencyFund.Location = new System.Drawing.Point(65, 473);
+            this.btnEmergencyFund.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnEmergencyFund.Name = "btnEmergencyFund";
-            this.btnEmergencyFund.Size = new System.Drawing.Size(169, 51);
+            this.btnEmergencyFund.Size = new System.Drawing.Size(197, 63);
             this.btnEmergencyFund.TabIndex = 4;
             this.btnEmergencyFund.Text = "Emergency Fund";
             this.btnEmergencyFund.UseVisualStyleBackColor = false;
@@ -206,10 +207,10 @@
             this.btnDebtFree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDebtFree.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDebtFree.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDebtFree.Location = new System.Drawing.Point(56, 267);
-            this.btnDebtFree.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnDebtFree.Location = new System.Drawing.Point(65, 329);
+            this.btnDebtFree.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnDebtFree.Name = "btnDebtFree";
-            this.btnDebtFree.Size = new System.Drawing.Size(169, 52);
+            this.btnDebtFree.Size = new System.Drawing.Size(197, 64);
             this.btnDebtFree.TabIndex = 5;
             this.btnDebtFree.Text = "Debt-Free Goal";
             this.btnDebtFree.UseVisualStyleBackColor = false;
@@ -221,10 +222,10 @@
             this.btnFinancialIndependence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinancialIndependence.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinancialIndependence.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnFinancialIndependence.Location = new System.Drawing.Point(56, 89);
-            this.btnFinancialIndependence.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnFinancialIndependence.Location = new System.Drawing.Point(65, 110);
+            this.btnFinancialIndependence.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFinancialIndependence.Name = "btnFinancialIndependence";
-            this.btnFinancialIndependence.Size = new System.Drawing.Size(169, 54);
+            this.btnFinancialIndependence.Size = new System.Drawing.Size(197, 66);
             this.btnFinancialIndependence.TabIndex = 6;
             this.btnFinancialIndependence.Text = "Financial Independence";
             this.btnFinancialIndependence.UseVisualStyleBackColor = false;
@@ -236,10 +237,10 @@
             this.btnRetirementPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRetirementPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRetirementPlan.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRetirementPlan.Location = new System.Drawing.Point(56, 326);
-            this.btnRetirementPlan.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnRetirementPlan.Location = new System.Drawing.Point(65, 401);
+            this.btnRetirementPlan.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnRetirementPlan.Name = "btnRetirementPlan";
-            this.btnRetirementPlan.Size = new System.Drawing.Size(169, 51);
+            this.btnRetirementPlan.Size = new System.Drawing.Size(197, 63);
             this.btnRetirementPlan.TabIndex = 7;
             this.btnRetirementPlan.Text = "Retirement Plan";
             this.btnRetirementPlan.UseVisualStyleBackColor = false;
@@ -251,10 +252,10 @@
             this.btnInvestmentGrowth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInvestmentGrowth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInvestmentGrowth.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnInvestmentGrowth.Location = new System.Drawing.Point(56, 153);
-            this.btnInvestmentGrowth.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnInvestmentGrowth.Location = new System.Drawing.Point(65, 188);
+            this.btnInvestmentGrowth.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnInvestmentGrowth.Name = "btnInvestmentGrowth";
-            this.btnInvestmentGrowth.Size = new System.Drawing.Size(169, 51);
+            this.btnInvestmentGrowth.Size = new System.Drawing.Size(197, 63);
             this.btnInvestmentGrowth.TabIndex = 8;
             this.btnInvestmentGrowth.Text = "Investment Growth";
             this.btnInvestmentGrowth.UseVisualStyleBackColor = false;
@@ -272,10 +273,10 @@
             this.pnlFinancialData.Controls.Add(this.lblMonthlyExpenses);
             this.pnlFinancialData.Controls.Add(this.lblInvestmentPercentage);
             this.pnlFinancialData.Controls.Add(this.txtExtraIncome);
-            this.pnlFinancialData.Location = new System.Drawing.Point(38, 75);
-            this.pnlFinancialData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pnlFinancialData.Location = new System.Drawing.Point(44, 92);
+            this.pnlFinancialData.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pnlFinancialData.Name = "pnlFinancialData";
-            this.pnlFinancialData.Size = new System.Drawing.Size(292, 500);
+            this.pnlFinancialData.Size = new System.Drawing.Size(341, 615);
             this.pnlFinancialData.TabIndex = 10;
             this.pnlFinancialData.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlFinancialData_Paint);
             // 
@@ -298,10 +299,10 @@
             "40",
             "50",
             "60"});
-            this.cmbInvestmentPercentage.Location = new System.Drawing.Point(35, 280);
-            this.cmbInvestmentPercentage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbInvestmentPercentage.Location = new System.Drawing.Point(41, 345);
+            this.cmbInvestmentPercentage.Margin = new System.Windows.Forms.Padding(2);
             this.cmbInvestmentPercentage.Name = "cmbInvestmentPercentage";
-            this.cmbInvestmentPercentage.Size = new System.Drawing.Size(170, 21);
+            this.cmbInvestmentPercentage.Size = new System.Drawing.Size(198, 24);
             this.cmbInvestmentPercentage.TabIndex = 10;
             this.cmbInvestmentPercentage.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -314,23 +315,38 @@
             this.pnlGoals.Controls.Add(this.btnRetirementPlan);
             this.pnlGoals.Controls.Add(this.btnDebtFree);
             this.pnlGoals.Controls.Add(this.btnFinancialIndependence);
-            this.pnlGoals.Location = new System.Drawing.Point(408, 75);
-            this.pnlGoals.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pnlGoals.Location = new System.Drawing.Point(476, 92);
+            this.pnlGoals.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pnlGoals.Name = "pnlGoals";
-            this.pnlGoals.Size = new System.Drawing.Size(295, 500);
+            this.pnlGoals.Size = new System.Drawing.Size(344, 615);
             this.pnlGoals.TabIndex = 11;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnExit.Location = new System.Drawing.Point(724, 754);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(143, 61);
+            this.btnExit.TabIndex = 12;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 710);
+            this.ClientSize = new System.Drawing.Size(943, 874);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pnlGoals);
             this.Controls.Add(this.pnlFinancialData);
             this.Controls.Add(this.btnBack);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Form2";
             this.Text = "-";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.pnlFinancialData.ResumeLayout(false);
             this.pnlFinancialData.PerformLayout();
             this.pnlGoals.ResumeLayout(false);
@@ -360,5 +376,6 @@
         private System.Windows.Forms.Panel pnlFinancialData;
         private System.Windows.Forms.Panel pnlGoals;
         private System.Windows.Forms.ComboBox cmbInvestmentPercentage;
+        private System.Windows.Forms.Button btnExit;
     }
 }
