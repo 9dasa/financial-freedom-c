@@ -29,10 +29,10 @@ namespace financial_freedom_c
 
         private void InvestmentGrowthForm_Load(object sender, EventArgs e)
         {
-            // Show the monthly investment that was calculated on Form2
+            
             TxtMIValue.Text = FinancialState.InvestmentAmount.ToString("N2");
 
-            // Fill the years dropdown (you can also do this from Properties → Items)
+            
             cmbYears.Items.Clear();
             cmbYears.Items.Add("1");
             cmbYears.Items.Add("2");
@@ -55,7 +55,7 @@ namespace financial_freedom_c
 
             cmbYears.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            lblResult.Text = "";
+            
             TxtMIValue.Text = FinancialState.InvestmentAmount.ToString("N2") + " SAR";
 
             cmbInterestRate.Items.Clear();
@@ -66,7 +66,7 @@ namespace financial_freedom_c
             }
             cmbInterestRate.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            lblResult.Text = "";
+            
 
         }
 
@@ -74,7 +74,7 @@ namespace financial_freedom_c
         {
           
         
-            // --- 1) Validate years ---
+           
             if (cmbYears.SelectedIndex == -1)
             {
                 MessageBox.Show("Please choose the number of years.");
@@ -88,7 +88,6 @@ namespace financial_freedom_c
                 return;
             }
 
-            // --- 2) Validate interest rate ---
             if (cmbInterestRate.SelectedIndex == -1)
             {
                 MessageBox.Show("Please choose an interest rate.");
@@ -103,16 +102,16 @@ namespace financial_freedom_c
                 return;
             }
 
-            // --- 3) Get monthly investment and convert interest ---
+            
             decimal monthlyInvestment = FinancialState.InvestmentAmount;
             int months = years * 12;
 
-            // Convert annual % to monthly rate
+            
             decimal monthlyRate = (interestPercent / 100m) / 12m;
 
             decimal totalAmount;
 
-            // --- 4) Calculate with compound interest ---
+            
             if (monthlyRate == 0)
             {
                 totalAmount = monthlyInvestment * months;
@@ -122,19 +121,24 @@ namespace financial_freedom_c
                 totalAmount =
                     monthlyInvestment *
                     ((decimal)Math.Pow((double)(1 + monthlyRate), months) - 1) / monthlyRate;
-            }
 
-            // --- 5) Display results ---
+            }
+            decimal totalInvested = monthlyInvestment * months;
+            decimal interestEarned = totalAmount - totalInvested;
+
             txtResult.Text =
-                "Monthly Investment: " + monthlyInvestment.ToString("N2") + Environment.NewLine +
+                "Monthly Investment: " + monthlyInvestment.ToString("N2") + " SAR" + Environment.NewLine +
                 "Duration: " + years + " years (" + months + " months)" + Environment.NewLine +
-                "Interest Rate: " + interestPercent + "%" + Environment.NewLine +
-                "Total Future Value: " + totalAmount.ToString("N2");
+                "Interest Rate: " + interestPercent + "%" + Environment.NewLine + Environment.NewLine +
+                "Total Invested: " + totalInvested.ToString("N2") + " SAR" + Environment.NewLine +
+                "Interest Earned: " + interestEarned.ToString("N2") + " SAR" + Environment.NewLine +
+                "Total Future Value: " + totalAmount.ToString("N2") + " SAR";
+
         }
 
-        
 
-        
+
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {

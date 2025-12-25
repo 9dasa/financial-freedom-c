@@ -34,13 +34,13 @@
             this.lblYearsLabel = new System.Windows.Forms.Label();
             this.cmbYears = new System.Windows.Forms.ComboBox();
             this.btnCalculate = new System.Windows.Forms.Button();
-            this.lblResult = new System.Windows.Forms.Label();
             this.txtResult = new System.Windows.Forms.TextBox();
             this.TxtMIValue = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbInterestRate = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +48,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(372, 9);
+            this.label1.Location = new System.Drawing.Point(390, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 32);
             this.label1.TabIndex = 0;
@@ -129,26 +129,14 @@
             this.btnCalculate.UseVisualStyleBackColor = false;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // lblResult
-            // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblResult.Location = new System.Drawing.Point(484, 240);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(71, 23);
-            this.lblResult.TabIndex = 7;
-            this.lblResult.Text = "Results";
-            this.lblResult.Click += new System.EventHandler(this.label4_Click);
-            // 
             // txtResult
             // 
             this.txtResult.BackColor = System.Drawing.SystemColors.Info;
-            this.txtResult.Location = new System.Drawing.Point(321, 266);
+            this.txtResult.Location = new System.Drawing.Point(319, 261);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(409, 112);
+            this.txtResult.Size = new System.Drawing.Size(409, 135);
             this.txtResult.TabIndex = 8;
             // 
             // TxtMIValue
@@ -224,19 +212,30 @@
             this.cmbInterestRate.Size = new System.Drawing.Size(121, 24);
             this.cmbInterestRate.TabIndex = 13;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(439, 218);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(172, 26);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Result summary ";
+            // 
             // InvestmentGrowthForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1029, 495);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbInterestRate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.TxtMIValue);
             this.Controls.Add(this.txtResult);
-            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.cmbYears);
             this.Controls.Add(this.lblYearsLabel);
@@ -259,12 +258,12 @@
         private System.Windows.Forms.Label lblYearsLabel;
         private System.Windows.Forms.ComboBox cmbYears;
         private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.TextBox txtResult;
         private System.Windows.Forms.TextBox TxtMIValue;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbInterestRate;
+        private System.Windows.Forms.Label label5;
     }
 }

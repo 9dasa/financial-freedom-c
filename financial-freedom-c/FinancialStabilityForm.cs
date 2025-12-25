@@ -5,14 +5,12 @@ namespace financial_freedom_c
 {
     public partial class FinancialStabilityForm : Form
     {
-        private Form2 _form2;
-        private double _monthlySaving;
+   
 
-        public FinancialStabilityForm(Form2 form2, double monthlySaving)
+        public FinancialStabilityForm()
         {
             InitializeComponent();
-            _form2 = form2;
-            _monthlySaving = monthlySaving;
+            
         }
 
         private void FinancialStabilityForm_Load(object sender, EventArgs e)
@@ -39,7 +37,9 @@ namespace financial_freedom_c
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            if (_monthlySaving <= 0)
+            double monthlySaving = (double)FinancialState.SavingsCapacity;
+
+            if (monthlySaving <= 0)
             {
                 MessageBox.Show("Your monthly saving capacity is 0. Check income/expenses in Form2.");
                 return;
@@ -54,20 +54,19 @@ namespace financial_freedom_c
             int years = int.Parse(cmbYears.SelectedItem.ToString());
             int months = years * 12;
 
-            double totalSaved = _monthlySaving * months;
+            double totalSaved = monthlySaving * months;
 
             lblResult.Text =
                 "Financial Stability Summary:\n" +
                 "---------------------------\n" +
-                "Monthly Saving Capacity: " + _monthlySaving.ToString("0.00") + " SAR\n" +
+                "Monthly Saving Capacity: " + monthlySaving.ToString("0.00") + " SAR\n" +
                 "Duration: " + years + " years (" + months + " months)\n\n" +
                 "Expected Savings: " + totalSaved.ToString("0.00") + " SAR";
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            _form2.Show();
+            this.Close();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

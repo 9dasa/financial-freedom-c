@@ -44,11 +44,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label1.Location = new System.Drawing.Point(377, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 32);
+            this.label1.Size = new System.Drawing.Size(301, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Financial Independence";
             // 
@@ -88,11 +88,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label3.Location = new System.Drawing.Point(78, 229);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(311, 25);
+            this.label3.Size = new System.Drawing.Size(283, 22);
             this.label3.TabIndex = 4;
             this.label3.Text = "Expected Annual Return Rate (%):";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -179,11 +179,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label5.Location = new System.Drawing.Point(79, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(224, 25);
+            this.label5.Size = new System.Drawing.Size(203, 22);
             this.label5.TabIndex = 14;
             this.label5.Text = "Select Number of Years:";
             // 

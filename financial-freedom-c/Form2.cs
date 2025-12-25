@@ -169,31 +169,19 @@ namespace financial_freedom_c
 
         private void btnFinancialStability_Click(object sender, EventArgs e)
         {
-            double income = double.Parse(txtMonthlyIncome.Text);
-            double extra = double.Parse(txtExtraIncome.Text);
-            double expenses = double.Parse(txtMonthlyExpenses.Text);
+      
+            FinancialStabilityForm frm = new FinancialStabilityForm();
+            frm.ShowDialog();
 
-            double monthlySaving = (income + extra) - expenses;
-            if (monthlySaving < 0) monthlySaving = 0;
-
-            FinancialStabilityForm f = new FinancialStabilityForm(this, monthlySaving);
-            f.Show();
-            this.Hide();
         }
 
 
         private void btnDebtFree_Click(object sender, EventArgs e)
         {
-            double income = double.Parse(txtMonthlyIncome.Text);
-            double extra = double.Parse(txtExtraIncome.Text);
-            double expenses = double.Parse(txtMonthlyExpenses.Text);
+            
+            DebtFreeForm frm = new  DebtFreeForm();
+            frm.ShowDialog();
 
-            double monthlyPayment = (income + extra) - expenses;
-            if (monthlyPayment < 0) monthlyPayment = 0;
-
-            DebtFreeForm f = new DebtFreeForm(this, monthlyPayment);
-            f.Show();
-            this.Hide();
         }
 
         private void Form2_Load(object sender, EventArgs e)
